@@ -14,7 +14,7 @@ html, body {
 /* Style for navigator bar */
 .navigator {
   background-color: #FFFFFF;
-  font-family: 'Georgia', serif;
+  font-family: 'Calibri', serif;
   padding: 1rem;
   display: flex;             
   justify-content: center;   
@@ -34,7 +34,7 @@ html, body {
 /* Style for footer */
 .footer {
   background-color: #FFFFFF;
-  font-family: 'Georgia', serif;
+  font-family: 'Calibri', serif;
   color: black;
   text-align: center;
   padding: 1rem;
@@ -42,18 +42,6 @@ html, body {
   font-weight: bold;
 }
 
-/* Fun rainbow effect (googled for help) */
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  width: 50px;       /* width of the rainbow strip */
-  height: 100%;
-  background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
-  opacity: 0.3;      /* make it subtle */
-  pointer-events: none; /* doesn’t block clicks */
-}
 
 body::before { left: 0; }
 body::after  { right: 0; }
@@ -65,14 +53,14 @@ body::after  { right: 0; }
 body {
   background-color: #FFFFFF;
   margin: 0;                 
-  font-family: 'Georgia', serif;
+  font-family: 'Calibri', serif;
 }
 
 /* Style for main content */
 .content{
   text-align: center;
   color: #000000;
-  font-family: 'Georgia', serif;
+  font-family: 'Calibri', serif;
   font-size: 1.2rem;   
 }
 
@@ -85,12 +73,12 @@ figure {
   width: 500px;
   height: auto;
   display: inline-block;   /* inline-block works with figure text-align */
-  border: 5px solid #F56476;  
+  border: 5px solid #F56577;  
   border-radius: 10px;
 }
 
 .caption {
-  font-family: 'Georgia', serif;
+  font-family: 'Calibri', serif;
   text-align: center;
   color: #000000;
   margin-top: 0.5rem;
@@ -99,7 +87,7 @@ figure {
 
 /* Fun Text for main title */
 .mainTitle {
-  font-family: 'Boldonse', system-ui, sans-serif; 
+  font-family: 'Roboto', system-ui, sans-serif; 
   text-align: center;
   font-weight: 400;     
   font-style: normal;  
@@ -112,7 +100,7 @@ figure {
 
 /* Style for our names */
 .name{
-  font-family: 'Boldonse', system-ui, sans-serif; 
+  font-family: 'Roboto', system-ui, sans-serif; 
   text-align: center;   
   font-weight: 400;
   font-style: normal;  
@@ -135,8 +123,8 @@ figure {
 /* Follow Up Sentance */
 .followUp {
   text-align: center; 
-  color: #5E4352;        
-  font-family:'Georgia', serif;
+  color: #000000;        
+  font-family:'Calibri', serif;
   margin-top: 0.5rem;    
 }
 
@@ -158,9 +146,9 @@ figure {
 
 /* Style for Big Title */
 .resourcesTitle {
-  font-family: 'Boldonse', system-ui, sans-serif; 
+  font-family: 'Roboto', system-ui, sans-serif; 
   text-align: center;   
-  color: #5E4352;  
+  color: #000000;  
   font-size: 2.5rem;        
   margin-top: 2rem; 
   margin-bottom: 1.5rem;    
@@ -168,7 +156,7 @@ figure {
 
 /* Subheadings (like Implicit Bias, Intersectionality) */
 h2, h3 {
-  font-family: 'Georgia', serif;
+  font-family: 'Calibri', serif;
   text-align: center;
   color: #5E4352;
   margin-top: 1.5rem;
@@ -178,7 +166,7 @@ h2, h3 {
 /* Shared style for definition boxes */
 .ourDefinition, 
 .thoughtDef {
-  font-family: 'Georgia', serif;
+  font-family: 'Calibri', serif;
   text-align: center;
   background-color: #E43F6F;   
   color: white;
