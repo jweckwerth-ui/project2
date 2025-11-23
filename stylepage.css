@@ -1,0 +1,230 @@
+/***** OVERALL *****/
+
+/* This is to make header and footer sit right */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  min-height: 100vh;      
+  display: flex;
+  flex-direction: column;  
+}
+
+.content {
+  flex: 1;                  /* takes all remaining space to push footer down */
+}
+
+
+/* Style for navigator bar */
+.navigator {
+  background-color: #BE3E82;
+  font-family: 'Georgia', serif;
+  padding: 1rem;
+  display: flex;             
+  justify-content: center;   
+  gap: 2rem;                
+}
+
+.navigator a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigator a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Style for footer */
+.footer {
+  background-color: #BE3E82;
+  font-family: 'Georgia', serif;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Fun rainbow effect (googled for help) */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 50px;       /* width of the rainbow strip */
+  height: 100%;
+  background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+  opacity: 0.3;      /* make it subtle */
+  pointer-events: none; /* doesn’t block clicks */
+}
+
+body::before { left: 0; }
+body::after  { right: 0; }
+
+
+/***** INDEX PAGE *****/
+
+/* Full Page Background */
+body {
+  background-color: #DFBBB1;
+  margin: 0;                 
+  font-family: 'Georgia', serif;
+}
+
+/* Style for main content */
+.content{
+  text-align: center;
+  color: #5E4352;
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;   
+}
+
+figure {
+  text-align: center; /* centers inline/inline-block children */
+  margin: 1rem 0;     /* space above and below figure */
+}
+
+.homeImage {
+  width: 500px;
+  height: auto;
+  display: inline-block;   /* inline-block works with figure text-align */
+  border: 5px solid #F56476;  
+  border-radius: 10px;
+}
+
+.caption {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  color: #5E4352;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Fun Text for main title */
+.mainTitle {
+  font-family: 'Boldonse', system-ui, sans-serif; 
+  text-align: center;
+  font-weight: 400;     
+  font-style: normal;  
+  color: #5E4352;       
+  text-align: center;   
+  font-size: 2.5rem;    
+}
+
+/***** ABOUT US SECTION - GENERAL FOR CONSISTENCY *****/
+
+/* Style for our names */
+.name{
+  font-family: 'Boldonse', system-ui, sans-serif; 
+  text-align: center;   
+  font-weight: 400;
+  font-style: normal;  
+  color: #5E4352 !important;  
+  font-size: 2.5rem;        
+  margin-top: 2rem; 
+  margin-bottom: 0.5rem;     
+}
+
+/* Style for our images */
+.usImage {
+  display: block;      
+  margin: 1rem auto;     
+  width: 350px;           
+  height: auto;   
+  border: 5px solid #E43F6F;  /* pink boarder like description box */
+  border-radius: 10px;
+}
+
+/* Follow Up Sentance */
+.followUp {
+  text-align: center; 
+  color: #5E4352;        
+  font-family:'Georgia', serif;
+  margin-top: 0.5rem;    
+}
+
+/* Style for our descritions of ourselves */
+.descriptions{
+  background-color: #E43F6F;  
+  color: white;             
+  width: 60%;                  /* makes the block smaller than full page */
+  margin: 1rem auto;           /* centers the block horizontally and adds vertical spacing */
+  padding: 1.5rem;             
+  border-radius: 10px;         
+  text-align: center; 
+  font-size: 1.1rem;
+}
+
+/***** TECH HEROES *****/
+
+/***** RESOURCES *****/
+
+/* Style for Big Title */
+.resourcesTitle {
+  font-family: 'Boldonse', system-ui, sans-serif; 
+  text-align: center;   
+  color: #5E4352;  
+  font-size: 2.5rem;        
+  margin-top: 2rem; 
+  margin-bottom: 1.5rem;    
+}
+
+/* Subheadings (like Implicit Bias, Intersectionality) */
+h2, h3 {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  color: #5E4352;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Shared style for definition boxes */
+.ourDefinition, 
+.thoughtDef {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  background-color: #E43F6F;   
+  color: white;
+  width: 70%;                  /* narrower box than full width */
+  margin: 1rem auto;           /* centers horizontally */
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.linksBox {
+  background-color: #F56476; 
+  color: white;                
+  width: 70%;              
+  margin: 1.5rem auto;        
+  padding: 1.5rem;       
+  border-radius: 10px;    
+  text-align: center;         
+  font-family: 'Georgia', serif;
+}
+
+.linksBox h2,
+.linksBox h3 {
+  color: white;           /* white text inside the pink box */
+  text-align: center;     /* center headings */
+  margin-bottom: 0.5rem;  /* spacing below the heading */
+}
+
+.linksBox a {
+  color: black;                
+  text-decoration: none;
+}
+
+.linksBox a:hover {
+  text-decoration: underline;
+  color: #DFBBB1;              /* subtle hover effect in contrast with pink */
+}
+
+.linksBox p {
+  margin: 0.5rem 0;            /* spacing between links */
+}
