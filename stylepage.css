@@ -1,49 +1,41 @@
-/***** OVERALL *****/
-
 /* This is to make header and footer sit right */
 html, body {
   height: 100%;
   margin: 0;
 }
-
 .page-container {
   min-height: 100vh;      
   display: flex;
   flex-direction: column;  
 }
-
 .content {
   flex: 1;                  /* takes all remaining space to push footer down */
 }
-
-
 /* Style for navigator bar */
 .navigator {
-  background-color: #BE3E82;
+  background-color: #FFFFFF;
   font-family: 'Georgia', serif;
   padding: 1rem;
   display: flex;             
   justify-content: center;   
   gap: 2rem;                
 }
-
 .navigator a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 }
-
 .navigator a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 
 
 /* Style for footer */
 .footer {
-  background-color: #BE3E82;
+  background-color: #FFFFFF;
   font-family: 'Georgia', serif;
-  color: white;
+  color: black;
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
@@ -71,7 +63,7 @@ body::after  { right: 0; }
 
 /* Full Page Background */
 body {
-  background-color: #DFBBB1;
+  background-color: #FFFFFF;
   margin: 0;                 
   font-family: 'Georgia', serif;
 }
@@ -79,9 +71,9 @@ body {
 /* Style for main content */
 .content{
   text-align: center;
-  color: #5E4352;
+  color: #000000;
   font-family: 'Georgia', serif;
-  font-size: 1.3rem;   
+  font-size: 1.2rem;   
 }
 
 figure {
@@ -100,7 +92,7 @@ figure {
 .caption {
   font-family: 'Georgia', serif;
   text-align: center;
-  color: #5E4352;
+  color: #000000;
   margin-top: 0.5rem;
   font-size: 1rem;
 }
@@ -111,7 +103,7 @@ figure {
   text-align: center;
   font-weight: 400;     
   font-style: normal;  
-  color: #5E4352;       
+  color: #000000;       
   text-align: center;   
   font-size: 2.5rem;    
 }
@@ -134,7 +126,7 @@ figure {
 .usImage {
   display: block;      
   margin: 1rem auto;     
-  width: 350px;           
+  width: 300px;           
   height: auto;   
   border: 5px solid #E43F6F;  /* pink boarder like description box */
   border-radius: 10px;
@@ -148,7 +140,7 @@ figure {
   margin-top: 0.5rem;    
 }
 
-/* Style for our descritions of ourselves */
+/* Style for description of me */
 .descriptions{
   background-color: #E43F6F;  
   color: white;             
