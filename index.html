@@ -3,56 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>LIS 500 Project #2</title>
-    
-    <!-- Link to CSS page -->
+    <title>Home | LIS 500 Project</title>
     <link rel="stylesheet" href="stylepage.css">   
-
-    <!-- Link to title font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-
-    
 </head>
 <body>
 
-<!-- Links to other pages -->
-    <div class="page-container">
-    <nav class="navigator"> <!-- To design this, use .navigator{ on stylepage.css -->
-        <a href="index.html">Home</a>
-        <a href="about_me.html">About Me: Joe</a>
+    <nav class="navigator">
+        <a href="index.html" class="active-link">Home</a>
+        <a href="about_me.html">About Me</a>
         <a href="tech_hero.html">Tech Hero</a>
         <a href="resources.html">Resources</a>
     </nav>
 
-<!-- Image Here -->
-<figure>
-        <img 
-            class="homeImage"
-            src="mainimage.jpeg" 
-            alt="Intersectionality Venn Diagram showing overlapping identities">
-          <figcaption class="caption">
-            Intersectionality Venn Diagram showing overlapping identities.
-          </figcaption>
-</figure>
-        
-  <!-- Main Section -->
-    <main class="content"> 
-      <!--Description of website-->
-      <h1 class="mainTitle">Welcome to my site!</h1> 
-      <p>I created this site for LIS 500 to look into implicit bias, intersectionality, and to highlight a tech hero of mine.</p>
-    </main>
-           
+    <div class="page-container">
+        <main class="content-card">
+            
+            <figure>
+                <img class="homeImage" src="mainimage.jpeg" alt="Intersectionality Venn Diagram">
+                <figcaption class="caption">Intersectionality Venn Diagram showing overlapping identities.</figcaption>
+            </figure>
+            
+            <h1>Welcome to my site!</h1>
+            <p style="text-align: center;">I created this site for LIS 500 to look into implicit bias, intersectionality, and to highlight a tech hero of mine.</p>
 
-  <!-- Footer -->
-  <footer class="footer"> 
-      <p>
-        Joe Weckwerth - LIS 500 Project #2
-      </p>
-  </footer>
-</div>
+            <footer class="footer">
+                <p>Joe Weckwerth - LIS 500 Project #2</p>
+            </footer>
+
+        </main>
+    </div>
+
 </body>
-    
 </html>
